@@ -22,7 +22,7 @@ body {
 	transform: translate(-50%, -50%);
 	padding-bottom: 40px;
 	padding-top: 40px;
-	border: 2px solid #EEE;
+	border: 2px solid #27ae60;
 }
 
 #result {
@@ -39,7 +39,7 @@ body {
 #result span {
 	display: inline-block;
 	padding: 5px 20px;
-	background-color: #009688;
+	background-color: #2ecc71;
 	margin: 10px 10px;
 }
 
@@ -65,7 +65,7 @@ body {
 	font-size: 18px;
 	padding: 10px 20px;
 	border: none;
-	border-top: 2px solid #EEE;
+	border-top: 2px solid #27ae60;
 	color: #888;
 	position: absolute;
 	bottom: 0;
@@ -79,12 +79,13 @@ body {
 	color: #0D2935;
 	max-height: 40px;
 	position: absolute;
+	color: #EEE;
 	top: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
 	padding: 5px;
-	border-bottom: 2px solid #EEE;
-	background-color: #EEE;
+	border-bottom: 2px solid #27ae60;
+	background-color: #27ae60;
 	margin: 0;
 }
