@@ -3,6 +3,18 @@ var $ = new BaseJS();
 $.ready(function() {
 	var result = $.select("#result");
 	result.html("");
+	$.select("#message").on("focus").call(function() {
+		$.select("#wrap").css({
+			border: "2px solid #0D2935"
+		});
+		$.select("#title").css({
+			backgroundColor: "#0D2935",
+			color: "#EEE"
+		});
+		$.select("#message").css({
+			borderTop: "2px solid #0D2935"
+		});
+	});
 	$.select("#message").on("keyup").call(function(e) {
 		if (e.keyCode == 13 && this.value.trim() !== "") {
 			$.http("http://anyms.pythonanywhere.com/" + encodeURI(this.value)).get().ready(function(res) {
